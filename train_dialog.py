@@ -32,10 +32,16 @@ def train_dialog(dialog_training_data_file, domain_file, path_to_model='models/d
                   interpreter=RasaNLUInterpreter('models/nlu/default/chat'),
                   action_endpoint=core_endpoint_config)
 
+    # Load the stories for training the dialog
     training_data = agent.load_data(dialog_training_data_file)
 
+    # Start training the dialog
     agent.train(training_data)
+
+    # Save the training data
     agent.persist(path_to_model)
+
+    # Run interactive learning
     interactive.run_interactive_learning(agent, dialog_training_data_file, skip_visualization=True)
     # return agent
 
