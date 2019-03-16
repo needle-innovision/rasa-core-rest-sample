@@ -2,24 +2,19 @@
 - bye
 - goodbye
 - seya
-- bye
-- bye
-- bye
 
 ## intent:get_joke
 - show me a joke
 - tell me a joke
-- tell me a joke
-- tell me a joke
+- tell a joke
+- how about a joke
 
 ## intent:greet
 - hi
 - hello
 - hi there
 - hey
-- hi
-- hi
-- hi
+- hei
 
 ## intent:query_days_in_month
 - how many days in [january](month)?

@@ -2,12 +2,11 @@
 # -----------
 import logging
 
+from rasa_core import run
 from rasa_core.agent import Agent
 from rasa_core.interpreter import RasaNLUInterpreter
 from rasa_core.policies import FallbackPolicy
 from rasa_core.policies.memoization import MemoizationPolicy
-from rasa_core.training import interactive
-
 
 # Function
 # ------------
@@ -42,10 +41,30 @@ def train_dialog(dialog_training_data_file, domain_file, path_to_model='models/d
     agent.persist(path_to_model)
 
     # Run interactive learning
-    interactive.run_interactive_learning(agent, dialog_training_data_file, skip_visualization=True)
-    # return agent
+    # interactive.run_interactive_learning(agent, dialog_training_data_file, skip_visualization=True)
+    return agent
 
 
-# Train
-# --------
-train_dialog('data/stories.md', 'domain.yml')
+# Function to run the bot
+# -----------------------
+def run_bot(serve_forever=True):
+    # Configure the interpreter
+    interpreter = RasaNLUInterpreter('models/nlu/default/chat')
+
+    # Configure the webhook for custom actions
+    action_endpoint = EndpointConfig(url="http://localhost:5055/webhook")
+
+    # Configure the agent
+    agent = Agent.load('models/dialogue', interpreter=interpreter, action_endpoint=action_endpoint)
+
+    # Run the bot in command line mode
+    run.serve_application(agent, channel='cmdline')
+    return agent
+
+
+if __name__ == '__main__':
+    # Train
+    train_dialog('data/stories.md', 'domain.yml')
+
+    # Run the bot
+    run_bot()

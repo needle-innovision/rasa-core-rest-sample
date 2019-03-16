@@ -7,6 +7,9 @@ train_nlu:
 train_dialog:
 	python train_dialog.py
 
+train_online:
+	python train_interactive.py
+
 run:
 	python -m rasa_core.run -d models/dialogue -u models/nlu/default/chat --port 5002 --endpoints endpoints.yml
 

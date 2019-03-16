@@ -26,9 +26,13 @@ class ActionJoke(Action):
         # Log the joke object in the console
         logging.info(joke)
 
-        # dispatcher.utter_message(joke)
-        dispatcher.utter_attachment(response)
+        # Respond back with text
+        dispatcher.utter_message(joke)
 
+        # Use this if you want a json response in rest mode
+        # dispatcher.utter_attachment(response)
+
+        # Use this for affirmation modes
         # dispatcher.utter_button_message(text="Did you mean this?",
         #                                 buttons=[{'title': 'Yes', 'payload': '1'},
         #                                          {'title': 'No', 'payload': '0'}])
