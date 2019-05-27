@@ -23,6 +23,7 @@
     ```
 
 ## Resources
+- Dummy images api `https://api.tenor.com/v1/trending`.
 
 #### Starter packs
 - https://github.com/RasaHQ/starter-pack-rasa-stack    

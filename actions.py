@@ -56,12 +56,15 @@ class ActionGif(Action):
         gindex = randint(0, gifs_length)
 
         # Get the gifs objects length
-        gif = response['results'][gindex]['media'][0]['gif']['url']
+        gif = {
+            'type': 'IMAGE',
+            'url': response['results'][gindex]['media'][0]['gif']['url']
+        }
 
         # Log the joke object in the console
         logging.info(gif)
 
         # Respond back with text
-        dispatcher.utter_message(gif)
+        dispatcher.utter_attachment(gif)
 
         return []
