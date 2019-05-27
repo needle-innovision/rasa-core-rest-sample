@@ -1,5 +1,5 @@
 train-nlu:
-	python -m rasa_nlu.train -c nlu_config.yml --fixed_model_name chat --data data/nlu.md -o models --project nlu --verbose
+	python -m rasa_nlu.train -c config.yml --fixed_model_name chat --data data/nlu.md -o models --project nlu --verbose
 
 train-core:
 	python -m rasa_core.train -s data/stories.md -d domain.yml -o models/dialogue --debug

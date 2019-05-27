@@ -94,4 +94,4 @@
 - how many days in [january](month)?
 - well how many days in [december](month)?
 - how many days in [march](month)?
-- how many day in october?
+- how many day in [october](month)?

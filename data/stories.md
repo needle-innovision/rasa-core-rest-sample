@@ -41,7 +41,7 @@
     - action_joke
 * bye
     - utter_bye
-    
+
 ## story_4
 * greet
     - utter_greet
@@ -57,7 +57,7 @@
     - action_joke
 * bye
     - utter_bye
-    
+
 ## Generated Story -2884161952829171360
 * greet
     - utter_greet
@@ -81,7 +81,7 @@
     - action_gif
 * bye
     - utter_bye
-    
+
 ## Generated Story new
 * greet
     - utter_greet
@@ -240,3 +240,11 @@
 * bye
     - utter_bye
 
+## New Story
+
+* greet
+    - utter_greet
+* query_days_in_month{"month":"december"}
+    - utter_answer_30_days
+* bye
+    - utter_bye
