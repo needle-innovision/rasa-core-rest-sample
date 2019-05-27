@@ -4,6 +4,7 @@ import logging
 import requests
 
 from rasa_core_sdk import Action
+from random import randint
 
 # Logger initialization
 logger = logging.getLogger(__name__)
@@ -36,4 +37,31 @@ class ActionJoke(Action):
         # dispatcher.utter_button_message(text="Did you mean this?",
         #                                 buttons=[{'title': 'Yes', 'payload': '1'},
         #                                          {'title': 'No', 'payload': '0'}])
+        return []
+
+
+class ActionGif(Action):
+    def name(self):
+        return 'action_gif'
+
+    def run(self, dispatcher, tracker, domain):
+        logging.basicConfig(level='INFO')
+
+        logger.info("""Getting into gif actions""")
+
+        response = requests.get("https://api.tenor.com/v1/trending").json()
+
+        # Get the gifs objects length
+        gifs_length = len(response['results'])
+        gindex = randint(0, gifs_length)
+
+        # Get the gifs objects length
+        gif = response['results'][gindex]['media'][0]['gif']['url']
+
+        # Log the joke object in the console
+        logging.info(gif)
+
+        # Respond back with text
+        dispatcher.utter_message(gif)
+
         return []

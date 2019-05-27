@@ -1,5 +1,5 @@
 train-nlu:
-	python -m rasa_nlu.train -c nlu_config.yml --fixed_model_name chat --data data/nlu.md -o models --project nlu --verbose
+	python -m rasa_nlu.train -c nlu_config.yml --fixed_model_name noby --data data/nlu.md -o models --project nlu --verbose
 
 train-core:
 	python -m rasa_core.train -s data/stories.md -d domain.yml -o models/dialogue --debug
@@ -11,7 +11,7 @@ test-core:
 	python -m rasa_core.test --core models/dialogue -s data/stories.md --fail_on_prediction_errors
 
 run-core:
-	python -m rasa_core.run --core models/dialogue --nlu models/nlu/chat --verbose  --endpoints endpoints.yml
+	python -m rasa_core.run --core models/dialogue --nlu models/nlu/noby --verbose  --endpoints endpoints.yml
 
 run-actions:
 	python -m rasa_core_sdk.endpoint --actions actions

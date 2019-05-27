@@ -2,12 +2,37 @@
 - bye
 - goodbye
 - seya
+- bye
+- bye
+- bye
+- bye
+- bye
+- bye
+- bye
+- bye
+
+## intent:get_gif
+- show me a gif
+- one gif image please
+- how about a gif
+- i wanted to see on gif
+- show me a gif
+- how about a gif
+- i wanted to see on gif please
 
 ## intent:get_joke
 - show me a joke
 - tell me a joke
 - tell a joke
 - how about a joke
+- tell me a joke please
+- tell me a joke please
+- will you tell me a joke?
+- can i hear a joke
+- tell me a joke
+- tell me a joke please
+- tell me a joke
+- tell me a joke
 
 ## intent:greet
 - hi
@@ -15,12 +40,38 @@
 - hi there
 - hey
 - hei
+- hi
+- hi
+- hi
+- hi
+- hi
+- hi
+- hi
+- hi
+- hi
+- hi
+- hi
+- hi
+- hi
 
 ## intent:query_days_in_month
 - how many days in [january](month)?
 - how many days in [february](month)?
 - how many days in [april](month)?
 - how many days in [march](month)?
+- number of days in [march](month)?
 - how many days in [december](month)?
 - how many days in [may](month)?
 - how many days in [june](month)?
+- how many days in [december](month)?
+- how many days in [april](month)?
+- how many days in [march](month)?
+- how many days in [february](month)?
+- how many days in [august](month)?
+- how many days in [october](month)?
+- can you tell me how many days are there in [june](month)?
+- so how many days in [july](month)?
+- how many days in [april](month)?
+- how many days in [december](month)?
+- how many days in [november](month)?
+- how many days in [january](month)?

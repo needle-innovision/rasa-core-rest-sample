@@ -1,14 +1,20 @@
+## Installation
+- `pip install rasa_core`
+- `pip install spacy`
+- `pip install sklearn-crfsuite`
+- `python -m spacy download en`
+
 ## How to run this application
-- Train the model `make train_nlu`
-- Train the dialog `make train_dialog`
-- If you want to train the dialog online `make train_online`
-- Run the custom action server `make action_server`
+- Train the model `make train-nlu`
+- Train the core `make train-core`
+- If you want to train the dialog online `make train-interactive`
+- Run the custom action server `make run-actions`
 - Run the bot `make run`
 
 
 ## Using rest webhooks
-- run `make run` && `make action_server`
-- POST to `http://localhost:5002/webhooks/rest/webhook` 
+- run `make run` && `make run-actions`
+- POST to `http://localhost:5005/webhooks/rest/webhook` 
     ```json
     {
       "sender": "Sandeep",

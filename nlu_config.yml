@@ -1,2 +1,4 @@
 language: "en"
-pipeline: "spacy_sklearn"
+pipeline: "pretrained_embeddings_spacy"
+policies:
+  - name: "FormPolicy"
