@@ -10,6 +10,11 @@
 - bye
 - bye
 - bye
+- bye
+- bye
+- bye
+- bye
+- bye
 
 ## intent:get_gif
 - show me a gif
@@ -19,6 +24,10 @@
 - show me a gif
 - how about a gif
 - i wanted to see on gif please
+- show me a gif
+- i want to see a gif
+- can i see a gif
+- how about a gif now
 
 ## intent:get_joke
 - show me a joke
@@ -33,6 +42,10 @@
 - tell me a joke please
 - tell me a joke
 - tell me a joke
+- show me a joke
+- how about a joke
+- i would like to hear a joke
+- tell me a joke please
 
 ## intent:greet
 - hi
@@ -40,6 +53,10 @@
 - hi there
 - hey
 - hei
+- hi
+- hi
+- hi
+- hi
 - hi
 - hi
 - hi
@@ -75,3 +92,6 @@
 - how many days in [december](month)?
 - how many days in [november](month)?
 - how many days in [january](month)?
+- well how many days in [december](month)?
+- how many days in [march](month)?
+- how many day in october?

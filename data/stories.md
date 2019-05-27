@@ -192,3 +192,51 @@
 * bye
     - utter_bye
 
+## Generated Story -6722301869515084407
+* greet
+    - utter_greet
+* get_gif
+    - action_gif
+* get_joke
+    - action_joke
+* get_gif
+    - action_gif
+* bye
+    - utter_bye
+* greet
+    - utter_greet
+* get_joke
+    - action_joke
+* get_gif
+    - action_gif
+* bye
+    - utter_bye
+
+## Generated Story 8928171928819649847
+* greet
+    - utter_greet
+* get_joke
+    - action_joke
+* get_gif
+    - action_gif
+* query_days_in_month{"month": "december"}
+    - utter_answer_31_days
+* bye
+    - utter_bye
+* greet
+    - utter_greet
+* query_days_in_month{"month": "march"}
+    - utter_answer_30_days
+* bye
+    - utter_bye
+
+## Generated Story 759423076209544432
+* greet
+    - utter_greet
+* query_days_in_month
+    - utter_answer_30_days
+* get_joke
+    - action_joke
+* bye
+    - utter_bye
+

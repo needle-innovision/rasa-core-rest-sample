@@ -2,21 +2,22 @@
 ---
 actions:
 - utter_bye
-- action_gif
-- utter_answer_31_days
 - utter_default
-- action_joke
 - utter_answer_30_days
-- utter_greet
 - utter_answer_28_days
+- action_joke
+- action_gif
+- utter_greet
+- utter_answer_31_days
 entities:
 - month
 intents:
-- query_days_in_month
 - greet
-- get_gif
 - get_joke
+- query_days_in_month
 - bye
+- get_gif
+- hi
 templates:
   utter_answer_28_days:
   - text: There are 28 days in the mentioned month.
