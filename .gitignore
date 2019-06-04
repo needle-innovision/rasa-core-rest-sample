@@ -5,3 +5,5 @@ models/
 .idea/
 
 rasa_core.log
+rasa.db
+tracker.db

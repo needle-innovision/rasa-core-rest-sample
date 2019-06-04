@@ -22,6 +22,9 @@
     }
     ```
 
+## RasaX docs
+- https://blog.rasa.com/rasa-x-getting-started-as-a-current-rasa-user/
+
 ## Resources
 - Dummy images api `https://tenor.com/gifapi/documentation#quickstart` sample `https://api.tenor.com/v1/trending`.
 

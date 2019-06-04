@@ -248,3 +248,12 @@
     - utter_answer_30_days
 * bye
     - utter_bye
+
+## New Story
+
+* greet
+    - utter_greet
+* get_joke
+    - action_joke
+* bye
+    - utter_bye

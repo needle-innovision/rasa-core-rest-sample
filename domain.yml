@@ -1,23 +1,21 @@
-%YAML 1.1
----
 actions:
-- utter_bye
-- utter_default
-- utter_answer_30_days
-- utter_answer_28_days
-- action_joke
-- action_gif
-- utter_greet
-- utter_answer_31_days
+  - utter_bye
+  - utter_default
+  - utter_answer_30_days
+  - utter_answer_28_days
+  - action_joke
+  - action_gif
+  - utter_greet
+  - utter_answer_31_days
 entities:
-- month
+  - month
 intents:
-- greet
-- get_joke
-- query_days_in_month
-- bye
-- get_gif
-- hi
+  - greet
+  - get_joke
+  - query_days_in_month
+  - bye
+  - get_gif
+  - hi
 templates:
   utter_answer_28_days:
   - text: There are 28 days in the mentioned month.
